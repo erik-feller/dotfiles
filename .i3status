@@ -1,0 +1,18 @@
+general {
+	output_format = "none"
+	interval = 5
+}
+
+order = "ethernet eth0"
+order += "time"
+
+
+ethernet eth0 {
+	format_up = "%ip"
+	format_down = "You Are Alone"
+}
+
+time {
+	format = "%H:%M"
+}
+
